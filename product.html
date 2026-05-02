@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Selenium 實戰練習場</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Store - 自動化測試練習專區</h1>
+    
+    <section>
+        <h2>熱門商品</h2>
+        <div class="product-container">
+            <div class="product" id="product-1">
+                <a href="https://example.com/item1">
+                    <img src="https://waapple.org/wp-content/uploads/2021/06/Untitled-design-20-e1745534545813-658x677.png" alt="小名產品圖" width="100">
+                </a>
+                <p class="name">Apple</p>
+                <p class="price">$10</p>
+                <button class="add-to-cart" onclick="addToCart('Apple')">加入購物車</button>
+            </div>
+
+            <div class="product" id="product-2">
+                <a href="https://example.com/banana">
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/close-up-of-banana-against-white-background-royalty-free-image-1598000978.jpg" alt="香蕉" width="100">
+                </a>
+                <p class="name">Banana</p>
+                <p class="price">$20</p>
+                <button class="add-to-cart" onclick="addToCart('Banana')">加入購物車</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="practice-zone">
+        <h2>互動練習區</h2>
+        
+
+
+        <div class="box">
+            <label for="username">聯絡人姓名：</label>
+            <input type="text" id="username" placeholder="請輸入姓名...">
+            <button id="submit-name">送出</button>
+            <p id="greeting"></p>
+        </div>
+
+        <div class="box">
+            <label>配送方式：</label>
+            <select id="shipping-method">
+                <option value="standard">標準快遞 (免運)</option>
+                <option value="express">特快送 ($100)</option>
+                <option value="pickup">超商取貨 ($60)</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <button id="load-content">加載隱藏優惠碼</button>
+            <p id="dynamic-msg" style="display:none; color: green; font-weight: bold; margin-top: 10px;">PROMO2026</p>
+        </div>
+        
+        <div class="box">
+            <input type="checkbox" id="newsletter"> <label for="newsletter">訂閱電子報</label>
+        </div>
+
+        <button id="btn" class="main-btn">點擊彈窗訊息</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
